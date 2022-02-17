@@ -85,7 +85,7 @@ router.delete('/:id', async (req, res) => {
         }
       });
       if (!tagData[0]) {
-        res.status(404).json({ message: 'No Tag to delete!' });
+        res.status(404).json({ message: 'item is no longer available, delete successful' });
         return;
       }
       res.status(200).json(tagData);

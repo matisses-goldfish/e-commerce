@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 // find category by ID
 router.get('/:id', async (req, res) => {
   try {
-    const categoryData = await Category.findbyPk(req.params.id, {
+    const categoryData = await Category.findByPk(req.params.id, {
       attributes: ['id', 'category_name'],
       include: [{
         model: Product,
@@ -48,7 +48,9 @@ router.get('/:id', async (req, res) => {
 // create a new category
 router.post('/', async (req, res) => {
   try {
-    const categoryData = await Category.create(req.body);
+    const categoryData = await Category.create(req.body, {
+      category_name: req.body.category_name
+    });
     res.status(200).json(categoryData);
 
   } catch (err) {
@@ -62,9 +64,8 @@ router.put('/:id', async (req, res) => {
     const categoryData = await Category.update(req.body, {
       where: {
         id: req.params.id,
-        password:req.params.id,
       },
-      individualHooks: true
+      // individualHooks: true
     });
     if (!categoryData[0]) {
       res.status(404).json({ message: 'No Category with this id!' });
@@ -79,13 +80,13 @@ router.put('/:id', async (req, res) => {
 // delete a category
 router.delete('/:id', async (req, res) => {
   try {
-  const categoryData = await Category.destroy({
+  const categoryData = await Category.destroy( {
     where: {
       id: req.params.id
     },
   });
   if (!categoryData[0]) {
-    res.status(404).json({ message: 'No Category with this id!' });
+    res.status(404).json({ message: 'item is no longer available, delete successful' });
     return;
   }
   res.status(200).json(categoryData);

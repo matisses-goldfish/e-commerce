@@ -68,13 +68,11 @@ router.get('/:id', async (req, res) => {
   */
 router.post('/', async (req, res) => {
   try {
-    const productData = await Product.create (req.body,{
-      return: {
-        product_id: Product.id,
-        price: Product.price,
-        stock: Product.stock,
-        tag_id,
-      }
+    const productData = await Product.create ({
+      product_name: req.body.product_name,
+      price: req.body.price,
+      stock: req.body.Stock,
+      tagIds: req.body.tag_id,
     });
     res.status(200).json(productData);
 
@@ -134,7 +132,7 @@ router.delete('/:id', async (req, res) => {
       }
     });
     if (!productData[0]) {
-      res.status(404).json({ message: 'No Product to delete!' });
+      res.status(404).json({ message: 'item is no longer available, delete successful' });
       return;
     }
     res.status(200).json(productData);
