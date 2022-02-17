@@ -41,7 +41,8 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 ## Walkthrough:
 ---
-![Walkthrough of Application]()()
+[![Walkthrough of Application](https://img.youtube.com/vi/PIoSTi4UfR4/0.jpg)](https://www.youtube.com/watch?v=PIoSTi4UfR4)
+
 ## Installation:
 ---
     npm i
