@@ -2,7 +2,7 @@
 [![License: ](https://img.shields.io/badge/license--brightgreen)](https://opensource.org/licenses/)
 #### **Name:** Honore Nelson
 #### **Github Repo:** https://github.com/matisses-goldfish/e-commerce
-**backend application- no link**
+#### **URL:** backend application- no URL
 ---
     
 ##  Table of Contents:
