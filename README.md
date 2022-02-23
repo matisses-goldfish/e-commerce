@@ -8,6 +8,7 @@
 ##  Table of Contents:
 * [Description](#description)
 * [Acceptance Criteria](#acceptance-criteria)
+* [Technologies Used] (#technologies-used)
 * [Walkthrough](#walkthrough)
 * [Installation](#installation)
 * [Usage Information](#usage)
@@ -40,6 +41,13 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
+
+## Technologies Used: 
+- Express
+- MySQL
+- Sequelize
+- Insomnia
+
 ## Walkthrough:
 ---
 [![Walkthrough of Application](https://img.youtube.com/vi/PIoSTi4UfR4/0.jpg)](https://www.youtube.com/watch?v=PIoSTi4UfR4)
