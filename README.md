@@ -8,8 +8,9 @@
 ##  Table of Contents:
 * [Description](#description)
 * [Acceptance Criteria](#acceptance-criteria)
-* [Technologies Used] (#technologies-used)
+* [Technologies Used](#technologies-used)
 * [Walkthrough](#walkthrough)
+* [Application](#application)
 * [Installation](#installation)
 * [Usage Information](#usage)
 * [Testing Instructions](#testing)
