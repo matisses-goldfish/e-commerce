@@ -52,6 +52,11 @@ THEN I am able to successfully create, update, and delete data in my database
 ---
 [![Walkthrough of Application](https://img.youtube.com/vi/PIoSTi4UfR4/0.jpg)](https://www.youtube.com/watch?v=PIoSTi4UfR4)
 
+## Application:
+---
+![model javascript](ss1.png)
+![routes javascript](ss2.png)
+
 ## Installation:
 ---
     npm i
@@ -89,4 +94,5 @@ This project is licensed under the  License - see the [LICENSE.md](LICENSE.md) f
 ---
 Any additional question? 
 ### Contact me at:
+* email: honoregn@gmail.com
 * Github: matisses-goldfish
